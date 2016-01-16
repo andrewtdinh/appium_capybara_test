@@ -3,7 +3,7 @@ require 'rspec'
 require 'site_prism'
 
 Capybara.register_driver(:appium) do |app|
-    opts = Appium.load_appium_txt file: File.join(Dir.pwd, 'appium.txt')
+    opts = Appium.load_appium_txt file: File.join(Dir.pwd, 'spec/config/ios/appium.txt')
     Appium::Capybara::Driver.new app, opts
 end
 
