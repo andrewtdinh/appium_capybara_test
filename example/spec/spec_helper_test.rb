@@ -11,8 +11,8 @@ include RSpec::Expectations
 # emulator -avd Nexus_5_API_22_X86 -gpu on
 # appium --avd @Nexus_5_API_19
 ENV['SERVER']||='qa1'
-ENV['PLATFORM']||='ios'
-# ENV['PLATFORM']||='android'
+# ENV['PLATFORM']||='ios'
+ENV['PLATFORM']||='android'
 ENV['SERVER_LOCATION']||='local'
 
 

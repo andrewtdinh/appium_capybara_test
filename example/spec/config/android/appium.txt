@@ -1,0 +1,13 @@
+[caps]
+appium-version = "1.4"
+deviceName = "Nexus_5_API_19"
+platformName = "Android"
+platformVersion = "4.4"
+app = "/Users/Andrew/Downloads/breakthrough-production.apk"
+
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false
+server_url = "http://localhost:4723/wd/hub"
+wait = 60
