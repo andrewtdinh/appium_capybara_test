@@ -2,9 +2,7 @@
 require 'appium_capybara'
 require 'rspec'
 require 'site_prism'
-# pages
-# require 'pages/landing_page'
-require './pages/home_page'
+
 
 include RSpec::Expectations
 
