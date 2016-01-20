@@ -4,17 +4,23 @@ require_relative '../../spec_helper_test'
 require './pages/landing_page'
 
 
-describe 'Android Test' do
+describe 'Login tests' do
   before(:each) do
     @landing_page = Pages::LandingPage.new
   end
 
+  it 'should find all the elements on the landing page' do
+    expect(@landing_page.seeking_therapy_text).to be_truthy
+    expect(@landing_page.get_started_text).to be_truthy
+    expect(@landing_page.welcome_signup_button).to be_truthy
+    expect(@landing_page.welcome_login_button).to be_truthy
+    expect(@landing_page.browse_providers_link).to be_truthy
+    puts 'All elements we expect are present'
+  end
   it 'should be able to login as ph+c1' do
     expect(@landing_page.seeking_therapy_text).to be_truthy
     @landing_page.click_login_button
 
-    # login.set_email_field('ph+c1@breakthrough.com')
-    # login.set_password_field('asdfasdf')
     # login.click_login_button
   end
 end

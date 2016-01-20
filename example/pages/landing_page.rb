@@ -8,7 +8,7 @@ module Pages
     element :login_button, :id, 'welcome_login_button'
     element :browse_providers_link, :id, 'welcome_login_button_browse_provider_text_view'
     element :seeking_therapy_text, :id, 'welcome_seeking_therapy_text_view'
-
+    element :get_started_text, :id, 'welcome__get_started_text_view'
 
     #############  CLICK LOCATORS   #############
     def click_signup_button
