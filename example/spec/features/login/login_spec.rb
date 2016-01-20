@@ -7,7 +7,6 @@ require './pages/landing_page'
 describe 'Android Test' do
   before(:each) do
     @landing_page = Pages::LandingPage.new
-    # login = Pages::
   end
 
   it 'should be able to login as ph+c1' do

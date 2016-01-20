@@ -4,15 +4,15 @@ module Pages
   class LandingPage < SitePrism::Page
     # include Capybara::DSL
     ###########   WELCOME OBJECTS   #############
-    # element :signup_button, 'com.breakthrough.mobile:id/welcome_signup_button'
-    # element :login_button, 'com.breakthrough.mobile:id/welcome_login_button'
+    element :signup_button, :accessibility_id, 'welcome_signup_button'
+    element :login_button, :accessibility_id, 'welcome_login_button'
     # LOGIN_BUTTON_LOCATOR          = {id: 'welcome_login_button'}
     # BROWSE_PROVIDERS_LINK_LOCATOR = {id: 'welcome_login_button_browse_provider_text_view'}
-    login_button = id('android:id'/welcome_login_button)
+    # login_button = id('android:id'/welcome_login_button)
 
     #############  CLICK LOCATORS   #############
     def click_signup_button
-      signup_button.click
+      click signup_button
     end
 
     def click_login_button
