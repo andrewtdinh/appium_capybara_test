@@ -10,6 +10,7 @@ describe 'Android Test' do
   end
 
   it 'should be able to login as ph+c1' do
+    expect(@landing_page.seeking_therapy_text).to be_truthy
     @landing_page.click_login_button
 
     # login.set_email_field('ph+c1@breakthrough.com')

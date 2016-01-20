@@ -13,15 +13,10 @@ module Pages
     #############  CLICK LOCATORS   #############
     def click_signup_button
       signup_button.click
-
     end
 
     def click_login_button
       login_button.click
-    end
-
-    def verify_page
-      expect(seeking_therapy_text).to be_truthy
     end
   end
 end
