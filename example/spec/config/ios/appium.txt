@@ -1,7 +1,7 @@
 [caps]
 platformName = "ios"
 deviceName ="iPhone 6"
-app = "./UICatalog.app.zip"
+app = "https://s3.amazonaws.com/breakthrough-mobile-builds/development/breakthrough.app.zip"
 platformVersion = "9.2"
 
 [appium_lib]
