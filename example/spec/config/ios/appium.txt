@@ -3,6 +3,7 @@ platformName = "ios"
 deviceName ="iPhone 6"
 app = "https://s3.amazonaws.com/breakthrough-mobile-builds/development/breakthrough.app.zip"
 platformVersion = "9.2"
+autoAcceptAlerts = true
 
 [appium_lib]
 sauce_username = ""
